@@ -33,7 +33,7 @@ function Detail() {
     }, []);
     
     return (
-        <div>
+        <div className={styles.container}>
             {loading ? (
                 <h1 className={styles.loader}>Loading...</h1>
             ) : (            
