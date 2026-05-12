@@ -32,5 +32,5 @@
     "typescript-eslint": "^8.59.3",
     "vite": "^8.0.12"
   },
-  "homepage": "https://animasana.github.io/movieapp/"  
+  "homepage": "https://animasana.github.io/ts-react-for-beginners/"  
 }
