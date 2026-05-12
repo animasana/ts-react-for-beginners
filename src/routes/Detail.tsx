@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import type { MovieDetailProps, MovieDetailResponse } from "../types/MovieDetailTypes";
 import MovieDetail from "../components/MovieDetail";
+import styles from "./Detail.module.css";
 
 
 function Detail() {
@@ -34,7 +35,7 @@ function Detail() {
     return (
         <div>
             {loading ? (
-                <h1>Loading...</h1>
+                <h1 className={styles.loader}>Loading...</h1>
             ) : (            
                 <MovieDetail
                     year={movie.year}
