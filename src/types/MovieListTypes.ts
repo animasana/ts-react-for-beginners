@@ -25,7 +25,7 @@ interface MovieProps {
   title_english?: string;
   title_long?: string;
   slug?: string;
-  year?: number;
+  year: number;
   rating?: number;
   runtime?: number;
   genres: string[];

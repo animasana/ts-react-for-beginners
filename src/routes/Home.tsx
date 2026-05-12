@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import type { MovieApiResponse, MovieProps } from "../types/MovieListTypes";
 import MovieList from "../components/MoviesList";
+import styles from "./Home.module.css";
 
 function Home() {
     const [loading, setLoading] = useState(true);
@@ -27,14 +28,15 @@ function Home() {
     }, []);
 
     return (
-        <>
+        <div className={styles.container}>
             {loading ? (
-                <h1>Loading...</h1>
-            ) : (
-                <MovieList movies={movies}/>
-            )}
-            
-        </>
+                <div className={styles.loader}>
+                    <h1>Loading...</h1>
+                </div>
+            ) : (                
+                <MovieList movies={movies} />                
+            )}            
+        </div>
     );
 }
 

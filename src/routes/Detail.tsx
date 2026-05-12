@@ -37,10 +37,12 @@ function Detail() {
                 <h1>Loading...</h1>
             ) : (            
                 <MovieDetail
+                    year={movie.year}
                     medium_cover_image={movie.medium_cover_image}
                     title={movie.title}
                     genres={movie.genres}
                     description_intro={movie.description_intro}
+                    yt_trailer_code={movie.yt_trailer_code}
                 />  
             )}
         </div>
