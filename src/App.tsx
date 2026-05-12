@@ -5,7 +5,7 @@ import Detail from "./routes/Detail";
 function App() { 
     
     return (
-        <Router basename="/ts-react-for-beginners">
+        <Router basename="/movieapp">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="movie/:id" element={<Detail />} />

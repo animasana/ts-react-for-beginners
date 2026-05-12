@@ -10,5 +10,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 300;
+  font-weight: 300 !important;
 }
