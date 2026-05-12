@@ -35,7 +35,9 @@ function Detail() {
     return (
         <div className={styles.container}>
             {loading ? (
-                <h1 className={styles.loader}>Loading...</h1>
+                <div className={styles.loader}>
+                    <h1>Loading...</h1>
+                </div>
             ) : (            
                 <MovieDetail
                     year={movie.year}
